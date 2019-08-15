@@ -35,7 +35,7 @@ export function todoReducer( state: Todo[] = estadoInicial, action: fromTODO.Act
         }
       });
     case fromTODO.ELIMINAR:
-      return state.filter( todoEdit => todoEdit.id !== action.id )
+      return state.filter( todoEdit => todoEdit.id !== action.id );
     case fromTODO.TOGGLEALL:
       return state.map( todoEdit => {
         return {
